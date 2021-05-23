@@ -60,6 +60,7 @@ function work2(item, icon) {
     }
 }
 
+
 function contest(item, icon) {
     var content = document.getElementById(item);
     var lists = content.classList;
