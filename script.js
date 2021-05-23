@@ -85,7 +85,7 @@ function problem(item, icon) {
     }
 }
 
-function projects(item, icon) {
+function project(item, icon) {
     var content = document.getElementById(item);
     var lists = content.classList;
     if (lists.contains('hidden')) {
@@ -96,6 +96,21 @@ function projects(item, icon) {
         icon.className = "fas fa-chevron-down";
     }
 }
+
+function research(item, icon) {
+    var content = document.getElementById(item);
+    var lists = content.classList;
+    if (lists.contains('hidden')) {
+        lists.replace('hidden', 'block');
+        icon.className = "fas fa-chevron-up";
+    } else {
+        lists.replace('block', 'hidden');
+        icon.className = "fas fa-chevron-down";
+    }
+}
+
+
+
 
 function weatherShow() {
 
